@@ -39,9 +39,9 @@ subjectAltName = otherName:1.3.6.1.4.1.311.20.2.3;UTF8:$UPN
 EOF
 
 export OPENSSL_CONF=$EXT_CONF_FILE
-openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -out "$PEM_FILE" \
+(openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -out "$PEM_FILE" \
 -outform PEM -keyout $KEY_FILE -subj "$SUBJECT" \
--extensions v3_req_client 2> /dev/null
+-extensions v3_req_client) 2> /dev/null
 
 rm $EXT_CONF_FILE
 unset OPENSSL_CONF
