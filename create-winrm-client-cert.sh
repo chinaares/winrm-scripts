@@ -18,7 +18,7 @@ set -e
 
 USER_NAME=${1:-cloudbase-init-user-$RANDOM}
 UPN=$USER_NAME@localhost
-SUBJECT="/CN=$USER_NAME"
+SUBJECT="//CN=$USER_NAME"
 
 PFX_FILE=${2:-winrm_client_cert}.pfx
 PEM_FILE=${PFX_FILE%.*}.pem
