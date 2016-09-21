@@ -1,4 +1,4 @@
-# command example: .\GetPSRemoteSessionUnsec.ps1 192.161.17.56 Admin
+# command example: .\GetPSRemoteSessionUnsec.ps1 192.161.17.56 Administrator
 param (
     [string]$ComputerName = $(throw "-ComputerName is required."),
 	[string]$UserName = $(throw "-UserName is required.")
