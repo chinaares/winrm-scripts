@@ -48,7 +48,7 @@ unset OPENSSL_CONF
 
 # This will ask for an export password.
 # To avoid it, add: -password pass:yourpassword
-openssl pkcs12 -export -in "$PEM_FILE" -inkey $KEY_FILE -out "$PFX_FILE"
+openssl pkcs12 -export -in "$PEM_FILE" -inkey $KEY_FILE -out "$PFX_FILE" -password pass:password
 
 rm -rf $PRIVATE_DIR
 
