@@ -13,6 +13,12 @@
 #    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 #    License for the specific language governing permissions and limitations
 #    under the License.
+#
+# Command Example: 
+# $ ./create-winrm-client-cert.sh "cloudbase-init-example" my_cert1 
+#
+#
+
 
 set -e
 
